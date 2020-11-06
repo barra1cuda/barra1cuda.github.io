@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Tic Tac Toe 2</title>
+    </head>
+    <body>
+        <h1 id="title">Tic-Tac-Toe:</h1>
+        <div id="gamefield">
+        <table>
+            <tr>
+                <td><input type="button" id="feld_0" value="  " class="button" onclick="run(0)"></td>
+                <td><input type="button" id="feld_1" value="  " class="button" onclick="run(1)"></td>
+                <td><input type="button" id="feld_2" value="  " class="button" onclick="run(2)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="feld_3" value="  " class="button" onclick="run(3)"></td>
+                <td><input type="button" id="feld_4" value="  " class="button" onclick="run(4)"></td>
+                <td><input type="button" id="feld_5" value="  " class="button" onclick="run(5)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="feld_6" value="  " class="button" onclick="run(6)"></td>
+                <td><input type="button" id="feld_7" value="  " class="button" onclick="run(7)"></td>
+                <td><input type="button" id="feld_8" value="  " class="button" onclick="run(8)"></td>
+            </tr>
+        </table>
+        </div>
+        <div id="score">
+            <h1>Score:</h1>
+            <table id="tabelscore">
+                <tr>
+                    <th><p><strong>Player 1 </strong></p></th>
+                    <th><p><strong>Player 2 </strong></p></th>
+                </tr>
+                <tr>
+                    <td><p id="tabscore1">0</p></td>
+                    <td><p id="tabscore2">0</p></td>
+                </tr>
+        
+            </table>
+        </div>
+        <div id="divround">
+            <h1>Round:</h1>
+            <p id="round">1</p>
+        </div>
+        <input type="button" class="reload" value="Reset-Score" onclick="resetscore()">
+		<input type="button" class="reload1" value="Reset-Round" onclick="resetround()">
+    </body>
+</html>

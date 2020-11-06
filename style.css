@@ -1,0 +1,115 @@
+.button {
+    width: 200px;
+    height: 200px;
+    font-size: 120px;
+    background-color: darkorange;
+    border-radius: 10px 10px 10px 10px;
+    border-color: black;
+} 
+#gamefield {
+    position: fixed;
+    top: 20%;
+    left: 32%;
+    width: 614px;
+    height: 614px;
+    background-color: #023088;
+    border-radius: 10px 10px 10px 10px;
+    align-content: center;
+    z-index: 2;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+body {
+    background-color: #c21dd8;
+    animation-name: Hintergrund;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+#score {
+    position: fixed;
+    top:20%;
+    left:10%;
+    width: 200px;
+    height: 250px;
+    background-color: #023088;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    z-index: 1;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+#tabelscore {
+    margin-left:40px;
+}
+#tabscore1 {
+    font-size:40px ;
+}
+#tabscore2 {
+    font-size:40px ;
+}
+#title {
+    font-size: 60px;
+    text-align: center;
+}
+#divround {
+    position: fixed;
+    top:20%;
+    left:75%;
+    width: 200px;
+    height: 250px;
+    background-color: #023088;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    z-index: 1;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+#round {
+    font-size: 60px;
+    z-index: 3;
+}
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -webkit-width: 100px;
+    z-index: 2;
+}
+.reload {
+    object-position: center;
+    font-size: 15px;
+    position: absolute;
+    left: 14%;
+    top:70%;
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    border-radius: 10px 10px 10px 10px;
+    border-color: black;
+    border-width: 5px;
+}
+.reload1 {
+    object-position: center;
+    font-size: 14px;
+    position: absolute;
+    left: 79%;
+    top:70%;
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    border-radius: 10px 10px 10px 10px;
+    border-color: black;
+    border-width: 5px;
+}
+@keyframes Hintergrund {
+    0% {background-color:red;}
+    14% {background-color:orange;}
+    28% {background-color:yellow;}
+    42% {background-color:green;}
+    56% {background-color:lightblue;}
+    70% {background-color:indigo;}
+    85% {background-color:purple;}
+    100% {background-color:red;}
+}
