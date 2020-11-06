@@ -100,3 +100,13 @@ function run(num) {
     check_for_win();
     set_score();
 }
+
+function position_buttons() {
+    for (var i = 0; i <= 2; i++) {
+        for (var j = 0; j <= 2; j++) {
+            document.getElementById('feld_' + (i + j * 3)).style.top = 1 + 33 * i + "%";
+            document.getElementById('feld_' + (i + j * 3)).style.left = 1 + 33 * j + "%";
+        }
+    }
+
+}

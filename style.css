@@ -1,17 +1,20 @@
 .button {
-    width: 200px;
-    height: 200px;
-    font-size: 120px;
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    font-size: 40px;
+    text-align: center;
     background-color: darkorange;
     border-radius: 10px 10px 10px 10px;
+    border-width: 5px;
     border-color: black;
-} 
+}
 #gamefield {
     position: fixed;
     top: 20%;
-    left: 32%;
-    width: 614px;
-    height: 614px;
+    left: 27.5%;
+    right: 27.5%;
+    padding-top: 45%;
     background-color: #023088;
     border-radius: 10px 10px 10px 10px;
     align-content: center;
@@ -28,10 +31,10 @@ body {
 }
 #score {
     position: fixed;
-    top:20%;
-    left:10%;
-    width: 200px;
-    height: 250px;
+    top: 30%;
+    left: 5%;
+    width: 20%;
+    height: 30%;
     background-color: #023088;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
@@ -41,24 +44,26 @@ body {
     border-color: black;
 }
 #tabelscore {
-    margin-left:40px;
+    position: absolute;
+    margin-left: 10%;
+    width: 80%;
 }
 #tabscore1 {
-    font-size:40px ;
+    font-size: 40px ;
 }
 #tabscore2 {
-    font-size:40px ;
+    font-size: 40px ;
 }
 #title {
     font-size: 60px;
     text-align: center;
 }
 #divround {
-    position: fixed;
-    top:20%;
-    left:75%;
-    width: 200px;
-    height: 250px;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 20%;
+    height: 30%;
     background-color: #023088;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
@@ -81,8 +86,8 @@ input {
     object-position: center;
     font-size: 15px;
     position: absolute;
-    left: 14%;
-    top:70%;
+    left: 10%;
+    bottom: 10%;
     width: 100px;
     height: 100px;
     background-color: darkorange;
@@ -94,8 +99,8 @@ input {
     object-position: center;
     font-size: 14px;
     position: absolute;
-    left: 79%;
-    top:70%;
+    right: 10%;
+    bottom: 10%;
     width: 100px;
     height: 100px;
     background-color: darkorange;
