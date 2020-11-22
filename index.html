@@ -1,54 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <script type="text/javascript" src="script.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Tic Tac Toe 2</title>
-    </head>
-    <body>
-        <h1 id="title">Tic-Tac-Toe:</h1>
-        <div id="gamefield">
-        <table>
-            <tr>
-                <td><input type="button" id="feld_0" value="  " class="button" onclick="run(0)"></td>
-                <td><input type="button" id="feld_1" value="  " class="button" onclick="run(1)"></td>
-                <td><input type="button" id="feld_2" value="  " class="button" onclick="run(2)"></td>
-            </tr>
-            <tr>
-                <td><input type="button" id="feld_3" value="  " class="button" onclick="run(3)"></td>
-                <td><input type="button" id="feld_4" value="  " class="button" onclick="run(4)"></td>
-                <td><input type="button" id="feld_5" value="  " class="button" onclick="run(5)"></td>
-            </tr>
-            <tr>
-                <td><input type="button" id="feld_6" value="  " class="button" onclick="run(6)"></td>
-                <td><input type="button" id="feld_7" value="  " class="button" onclick="run(7)"></td>
-                <td><input type="button" id="feld_8" value="  " class="button" onclick="run(8)"></td>
-            </tr>
-        </table>
-        </div>
-        <div id="score">
-            <h1>Score:</h1>
-            <table id="tabelscore">
-                <tr>
-                    <th><p><strong>Player 1 </strong></p></th>
-                    <th><p><strong>Player 2 </strong></p></th>
-                </tr>
-                <tr>
-                    <td><p id="tabscore1">0</p></td>
-                    <td><p id="tabscore2">0</p></td>
-                </tr>
-        
-            </table>
-        </div>
-        <div id="divround">
-            <h1>Round:</h1>
-            <p id="round">1</p>
-        </div>
-        <input type="button" class="reload" value="Reset-Score" onclick="resetscore()">
-		<input type="button" class="reload1" value="Reset-Round" onclick="resetround()">
-        <script type="text/javascript">
-            position_buttons()
-        </script>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tic Tac Toe 2</title>
+</head>
+
+<body>
+  <div class="inputButtons">
+    <input type="button" class="resetStats" value="Reset-Stats" onclick="resetStats()">
+    <div class="title">
+      <h1 >Tic-Tac-Toe</h1>
+      <p>by Hauke</p>
+    </div>
+    <input type="button" class="resetField" value="Reset-Game" onclick="resetField()">
+  </div>
+
+  <div class="row">
+    <div class="divScore">
+      <h1>Score:</h1>
+      <table class="tableScore">
+        <tr>
+          <th>
+            <p><strong>Player 1 </strong></p>
+          </th>
+          <th>
+            <p><strong>Player 2 </strong></p>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <p id="pScore1">0</p>
+          </td>
+          <td>
+            <p id="pScore2">0</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="divField">
+      <table class="tableField">
+        <tr>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_00" value="  " class="button" onclick="run('00')">
+            </div>
+          </td>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_01" value="  " class="button" onclick="run('01')">
+            </div>
+          </td>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_02" value="  " class="button" onclick="run('02')">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_10" value="  " class="button" onclick="run('10')">
+            </div>
+          </td>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_11" value="  " class="button" onclick="run('11')">
+            </div>
+          </td>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_12" value="  " class="button" onclick="run('12')">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_20" value="  " class="button" onclick="run('20')">
+            </div>
+          </td>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_21" value="  " class="button" onclick="run('21')">
+            </div>
+          </td>
+          <td>
+            <div class="buttonDiv">
+              <input type="button" id="feld_22" value="  " class="button" onclick="run('22')">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="divRound">
+      <h1>Round:</h1>
+      <p id="pRound">0</p>
+    </div>
+  </div>
+
+
+  <!-- script type="text/javascript">
+    positionButtons()
+  </script -->
+
+</body>
+
 </html>
